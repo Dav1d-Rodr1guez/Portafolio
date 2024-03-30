@@ -1,0 +1,329 @@
+/* estilos del header */
+:root{
+    --color1: #8EACCD;
+    --color2: #D2E0FB;
+    --color3: #4869ff;
+    --color4: #3559fc ;
+}
+body,
+section{
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background: var(--color1) !important;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    z-index: 999;
+}
+.navbar a {
+    color: var(--color4);
+}
+.navbar a:active{
+    color: var(--color3);
+}
+#logo{
+    width: 66px;
+    margin-right: 10px;
+}
+#lineas{
+    width: 20px;
+}
+/* DISEÑOS DEL HERO */
+#hero{
+    background-position: center;
+    background-size: cover;
+    background: var(--color2);
+    height: 100vh;
+    width: 100%;
+}
+#hero .row{
+    width: 100%;
+    height: 100vh;
+}
+#hero .row .col-md-6{
+    padding-top:10%;
+    width: 50%;
+}
+#hero .row .col-md-6 h2{
+    margin: 0 auto;
+    color: var(--color3);
+    text-transform: uppercase;
+    text-align: center;
+    width: 60%;
+}
+#hero .row .col-md-6 h1{
+    margin: 0 auto;
+    color: var(--color4);
+    text-align: center;
+    padding: 10px 0 0 0 ;
+    width: 50%;
+}
+#izquierda{
+    background:url("../img/bginicio2.png");
+    background-size:cover ;
+    background-position: center;
+}
+#botones{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 50px 0 0 0 ;
+}
+#botones button{
+    background:transparent;
+    border: 2px  solid var(--color4);
+    border-radius: 25px;
+    color: var(--color4);
+    padding:5px 25px;
+    font-size: 20px;
+    transition: .5s;
+}
+#botones button:hover{
+    transform: scale(1.1);
+    background: var(--color3);
+}
+/* DISEÑOS DE ABOUT */
+
+#About {
+    background-position: center;
+    background-size: cover;
+    background: var(--color2);
+    height: 100vh;
+    width: 100%;
+}
+#About .row {
+    width: 100%;
+    height: 100vh;
+}
+#About .row .col-md-6 {
+    padding-top: 10%;
+    width: 50%;
+}
+#About .row .col-md-6 h2 {
+    margin: 0 auto;
+    color: var(--color3);
+    text-align: center;
+    padding: 10px 0 0 0;
+    width: 60%;
+}
+#About .row .col-md-6 h4{
+    margin: 0 auto;
+    color: var(--color4);
+    text-align: center;
+    padding: 10px 0 0 0;
+    width: 50%;
+}
+#About .row .col-md-6 p{
+    margin: 0 auto;
+    color: var(--color4);
+    text-align: left;
+    padding: 80px 0 20px 20px;
+    width: 100%;
+    font-size: smaller;
+}
+#about-izquierda{
+    background:url("../img/foto2.png");
+    background-size:cover ;
+    background-position: center;
+}
+/* DISEÑOS DE RESUME */
+
+#Resume {
+    background-position: center;
+    background-size: cover;
+    background: var(--color2);
+    width: 100%;
+}
+#Resume .row {
+    width: 100%;
+}
+#Resume .row .col-md-4 {
+    padding-top: 4%;
+    width: 33.33%;
+}
+
+#Resume .row .col-md-4 h2 {
+    margin: 0 auto;
+    color: var(--color3);
+    text-align: center;
+    padding: 5px 0 10px 0;
+    font-size: 25px;
+}
+
+#Resume .row .col-md-4 h4 {
+    margin: 0 auto;
+    color: var(--color4);
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+#Resume .row .col-md-4 p {
+    margin: 0; 
+    color: var(--color4);
+    text-align: left;
+    padding: 20px 20px; 
+    font-size: smaller;
+}
+
+#Resume .row .col-md-4 .iconos {
+    text-align: center;
+    height: 170px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    transition: .5s;
+}
+
+#Resume .row .col-md-4 .iconos img {
+    width: 150px;
+    transition: .5s;
+}
+
+#Resume .row .col-md-4 .iconos .descripcion p {
+    text-align: center;
+    display: none;
+    font-size: larger;
+}
+#Resume .row .col-md-4 .iconos button{
+    background: transparent;
+    border: transparent;
+}
+#Resume .row .col-md-4 .iconos button img:hover{
+    transform: scale(0.9);
+} 
+#resume-izquierda{
+    display: block;
+}
+.accordion-button::after{
+    background: var(--color2)!important;
+}
+.accordion-body,
+.accordion-button,
+.accordion-header{
+    background: var(--color2)!important;
+    color: var(--color4)!important;
+    display: flex;
+}
+#descargar{
+    width: 150px;
+}
+#columnas{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    font-size: larger;
+}
+#informacion{
+    padding-left: 25px;
+}
+.iconos-redes{
+    text-align: center;
+    height: 80px;
+    justify-content: center; 
+    align-items: center;
+    transition: .5s;
+}
+.iconos-redes img{
+    width: 70px;
+    transition: .5s;
+}
+.iconos-redes img:hover{
+    transform: scale(1.2);
+}
+#btn-whats{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 999;
+    height: auto;
+    display: block;
+}
+
+#btn-whats img{
+    width: 75px;
+    transition: .5s;
+}
+#btn-whats img:hover{
+    transform: scale(.85);
+}
+#btn-whats button{
+    position: fixed;
+    background: transparent;
+    border: transparent;
+    transition: .5s;
+    bottom: 105px;
+}
+#btn-whats button img{
+    border: 1px solid var(--color3);
+    border-radius: 50%;
+}
+@media screen and (min-width:320px) and (max-width: 767px) {   
+    #hero{
+        background-position: center;
+        background-size: cover;
+        background: var(--color2);
+        height: 100vh;
+        width: 100%;
+    }
+    #hero .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #hero .row .col-md-6{
+        width: 100%;
+        height: 50vh;
+    }
+    #About {
+        background-position: center;
+        background-size: cover;
+        background:var(--color2);
+        height: 100vh;
+        width: 100%;
+    }
+    #About .row {
+        display: block;
+    }
+    #About .row .col-md-6 {
+        width: 100%;
+        height: 50vh;
+    }
+    #Resume {
+        background-position: center;
+        background-size: cover;
+        background:var(--color2);
+        width: 100%;
+        padding-left: 25px;
+    }
+    #Resume .row {
+        display: block;
+    }
+    #Resume .row .col-md-4 {
+        width: 100%;
+    }
+    #Resume .row .col-md-4 .iconos {
+        height: 70px;
+    }
+    
+    #Resume .row .col-md-4 .iconos img {
+        width: 50px;
+    }
+    
+    #Resume .row .col-md-4 .iconos .descripcion p {
+
+        font-size: small;
+    }
+    #Resume carousel-item{
+        padding-bottom: 20px;
+    }
+    #btn-whats img{
+        width: 45px;
+    }
+    #btn-whats button{
+        bottom: 80px;
+    }
+}
